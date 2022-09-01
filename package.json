@@ -2,6 +2,9 @@
   "name": "example-app",
   "description": "a really cool app",
   "version": "1.0.0",
+  "scripts": {
+    "start": "node index.js"
+  },
   "engines": {
     "node": "18.x"
   }
