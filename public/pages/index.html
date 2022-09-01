@@ -1,12 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testing</title>
+    <meta
+      name="description"
+      content="Adventure es un juego de plataformas, con una apariencia retro y gameplay divertido para jugadores de todo nivel. ¿Ya lo probaste?"
+      />
+      <link rel="apple-touch-icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../css/header_footer.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/banners.css">
+    <title>Virtual Machine</title>
 </head>
 <body>
-    <p>Successful deployment</p>
+    <header></header>
+    <main>
+        <div id="game-banner" class="main-banner banner video-banner">
+            <video autoplay muted loop id="game-video">
+                <source src="../video/banner_video.mp4" type="video/mp4">
+            </video>
+            <div class="gb-text">
+                <h1>Presentamos <span style="text-decoration: underline;">Adventure</span></h1>
+                <a href="/pages/game.html" role="button">¡Jugar ahora!</a>
+            </div>
+        </div>
+        <div class="br-img">
+            <img src="../img/funnyIcon.png" alt="The Hero">
+        </div>
+
+        <div class="manual-character">
+
+            <h2>Manual - ¿¡Qué es todo esto!?</h2>
+            <div class="character-ctr">
+                <div class="character-card">
+                    <img src="../img/hero_idle.gif" width="100px">
+                    <p>Este es el personaje principal, ayúdalo en su travesía para enfrentar el jefe de los goblins. </p>
+                </div>
+                <div class="character-card">
+                    <img src="../img/hero_running.gif" width="100px">
+                    <p>Desplázate, hacia arriba, abajo y costados usando las teclas:</p>
+                    <div class="optional-img">
+                        <img src="../img/wasd_keys.png"/>
+                        <img src="../img/arrow_keys.png"/>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../img/hero_attack.gif" width="100px">
+                    <p>Puedes atacar con la tecla Espacio o con clic izquierdo</p>
+                    <div class="optional-img">
+                        <img src="../img/space_mouse.png" alt="Espacio y clic izquierdo">
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="../img/worm_idle.gif" width="100px">
+                    <p>Cuidado, Worm es uno de los enemigos comunes que te encontrarás en la aventura. Es pasivo, pero si te acercas te hará daño.</p>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div id="about-us" class="banner second-banner">
+            <div class="gb-text">
+                <h2>El Team</h2>
+                <p>Conoce al equipo detrás del juego</p>
+                <a href="../pages/nosotros.html" role="button">Conoce al equipo</a>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="/js/loadHeaderFooter.js"></script>
 </body>
 </html>

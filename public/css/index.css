@@ -1,0 +1,95 @@
+main{background-color: #262626;}
+
+div#game-banner{
+    height: fit-content;
+    position: relative;
+    width: 100%;
+}
+video#game-video{width: 100%;}
+
+div.video-banner div.gb-text{
+    position: absolute !important;
+    left: 10% !important;
+    top: 0 !important;
+}
+
+div.video-banner::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-image: url("../svg/parabolic.svg");
+    bottom: 0;
+    left: 0;
+}
+
+div.br-img{
+    width: 100%;
+    text-align: center;
+    margin: 150px 0;
+}
+
+div.br-img > img {
+    max-width: 80%;
+}
+
+div.manual-character{
+    width: 90%;
+    margin: 50px auto;
+}
+div.character-ctr{
+
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+
+div.character-card{
+    display: flex;
+    background-color: #444;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+div.character-card > p {
+    text-align: justify;
+}
+
+div.character-card > img{
+    border-radius: 15px;
+}
+
+div.character-card div.optional-img{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+div.character-card div.optional-img img{
+    width: 100px;
+}
+
+div#about-us{
+    height: 40vh;
+    background-image: url(../img/about-us.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 610px) {
+    div.video-banner::after{
+        display: none;
+    }
+
+    h2{
+        font-size: 1.2em;
+    }
+
+}

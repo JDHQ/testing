@@ -1,0 +1,44 @@
+div.banner{
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+div.second-banner::before{
+    content: "";
+    background-color: black;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+div.gb-text{
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+div.gb-text > a{
+    padding: 15px 25px;
+    width: fit-content;
+    background-color: #7A96FF;
+    border-radius: 20px;
+}
+div.gb-text > a:hover{
+    background-color: #6078cf;
+}
+
+@media only screen and (max-width: 610px){
+
+    div.gb-text > a{
+        padding: 10px 20px;
+        font-size: 0.8em;
+    }
+    div.gb-text > h1{
+        font-size: 1.2em;
+    }
+
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos</title>
+    <link rel="stylesheet" href="../css/header_footer.css">
+    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+    <style>
+        main{
+            padding: 80px 10%;
+        }
+        div.ctr{
+            margin: 50px 0;
+        }
+        h1#title{
+            text-align: center;
+        }
+        h1#title::after{
+            content: '';
+            margin-top: 5pxx;
+            display: block;
+            height: 5px;
+            background-color: whitesmoke;
+        }
+
+        main a{
+            color: cornflowerblue;
+            text-decoration: underline;
+        }
+
+        textarea{
+            border-radius: 20px;
+            max-width: 100%;
+            background-color: #eee;
+            color: black;
+            padding: 20px;
+            resize: none;
+        }
+
+        textarea:disabled {
+            background-color: lightgray;
+        }
+
+        button{
+            color: white;
+            background-color: #7A96FF;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 10px;
+        }
+        button:hover{
+            background-color: #6078cf;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <h1 id="title">Contáctanos</h1>
+        <div class="ctr">
+            <h2>Nuestros Emails</h2>
+            <ul>
+                <li><a href="mailto:business@virtualmachine.com" target="_blank">business@virtualmachine.com</a></li>
+                <li><a href="mailto:help@virtualmachine.com" target="_blank">help@virtualmachine.com</a></li>
+                <li><a href="mailto:ideas@virtualmachine.com" target="_blank">ideas@virtualmachine.com</a></li>
+            </ul>
+        </div>
+        <div class="ctr">
+            <h2>Redes Sociales</h2>
+            <box-icon type='logo' name='twitter' color="#f5f5f5" size="lg"></box-icon>
+            <box-icon name='discord-alt' type='logo' color='#f5f5f5' size="lg"></box-icon>
+            <box-icon name='instagram-alt' type='logo' color='#f5f5f5' size="lg"></box-icon>
+        </div>
+        <div class="ctr">
+            <h2>¿Ya probaste Adventure?</h2>
+            <p>Cúentanos que te pareció el videojuego en pocas palabras.</p>
+            <div id="message-ctr">
+                <textarea onkeydown="wordCounter(this)" onkeyup="wordCounter(this)" maxlength="150" name="message" id="message" cols="40" rows="5" placeholder="Uhmmm debo decir que..."></textarea>
+                
+                <p><span id="display-counter">0</span> / 150</p>
+                <button onclick="sendMessage()">Enviar</button>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="/js/loadHeaderFooter.js"></script>
+    <script>
+        displayCounter = document.getElementById("display-counter");
+        messageCtr = document.getElementById("message-ctr");
+        textarea = document.getElementById("message");
+        function wordCounter(element){
+
+            displayCounter.innerHTML = element.value.length;
+
+        }
+
+        function sendMessage(){
+
+            textarea.setAttribute("disabled", "true");
+            setTimeout(()=>{messageCtr.innerHTML="<h3>Gracias</h3>"}, 1000);
+
+        }
+
+    </script>
+</body>
+</html>

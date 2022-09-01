@@ -1,0 +1,25 @@
+main{padding: 50px 0;}
+h1 {text-align: center;}
+p.question-text, input {display: none;}
+input:checked ~ p {display: block;}
+input:checked + label > span.arrow {
+    background-image: url('/svg/down-arrow.svg');
+}
+label {
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+    padding: 10px;
+    border-top: 3px solid whitesmoke;
+}
+section#faqs{
+    width: 80%;
+    margin: 20px auto;
+    
+}
+span.arrow{
+    background-image: url("/svg/right-arrow.svg");
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}

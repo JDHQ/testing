@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+a{text-decoration: none;}
+body{margin: 0; background-color: #262626;}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+header{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+a#logo {line-height: 0;}
+a#logo img {height: 110px}
+header nav{
+    display: flex;
+    align-items: center;
+}
+header nav > a{
+    font-family: 'Roboto Mono',Verdana, sans-serif;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    display: inline-block;
+    padding: 0 25px;
+}
+
+div#footer-body{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    width: 100%;
+}
+
+div#footer-body a{
+    display: block;
+    margin-bottom: 10px;
+}
+footer{
+    background-color: #262626;
+    padding-bottom: 1px;
+}
+p#footer-endText{text-align: center;}
+
+@media only screen and (max-width: 670px) {
+    
+    header nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    header nav > a{
+        font-size: .8em;
+        padding: 0 5px;
+        margin: 5px 0;
+    }
+
+    div#footer-body > div {
+        margin: 0 25px;
+    }
+    div#footer-body a{
+        font-size: .8em;
+    }
+
+}

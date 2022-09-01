@@ -8,6 +8,7 @@ app.get("/",(req,res)=>{
     res.sendFile("index.html", {root: "public/pages/"})
 })
 
+
 app.listen(port, ()=>{
     console.log("Escuchando en el puerto 8080...");
 })
